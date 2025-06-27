@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(215, 25%, 27%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 13%, 65%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(215, 25%, 27%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(215, 25%, 27%);
+  --border: hsl(220, 13%, 91%);
+  --input: hsl(220, 13%, 91%);
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(215, 25%, 27%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(215, 25%, 27%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(221, 83%, 53%);
+  --radius: 0.75rem;
+  
+  /* Custom colors matching design */
+  --surface: hsl(0, 0%, 100%);
+  --slate-50: hsl(210, 40%, 98%);
+  --slate-100: hsl(214, 32%, 91%);
+  --slate-200: hsl(213, 27%, 84%);
+  --slate-300: hsl(212, 23%, 69%);
+  --slate-400: hsl(215, 20%, 65%);
+  --slate-500: hsl(215, 16%, 47%);
+  --slate-600: hsl(215, 19%, 35%);
+  --slate-700: hsl(215, 25%, 27%);
+  --slate-900: hsl(222, 84%, 5%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-inter antialiased bg-slate-50 text-foreground overflow-hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
